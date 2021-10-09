@@ -8,4 +8,10 @@ import { Component } from '@angular/core';
 })
 export class TjsAdditionComponent {
 
+  numberOne = 10;
+  numberTwo = 90;
+  total = 100;
+
+  add = () => this.total = this.numberOne + this.numberTwo;
+
 }
