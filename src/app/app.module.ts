@@ -10,11 +10,13 @@ import { FormsModule } from '@angular/forms';
 import { MatCardModule } from '@angular/material/card';
 import { MatButtonModule } from '@angular/material/button';
 import { MatCheckboxModule } from '@angular/material/checkbox';
+import { TjsMultiplicationComponent } from './tjs-multiplication/tjs-multiplication.component';
 
 @NgModule({
   declarations: [
     AppComponent,
-    PizzaToppingsComponent
+    PizzaToppingsComponent,
+    TjsMultiplicationComponent
   ],
   imports: [
     BrowserModule,
