@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { PizzaService } from '../pizza.service';
 
 @Component({
   selector: 'app-pizza-toppings',
@@ -7,6 +8,11 @@ import { Component, OnInit } from '@angular/core';
   styleUrl: './pizza-toppings.component.css',
 })
 export class PizzaToppingsComponent implements OnInit {
-  constructor() {}
-  ngOnInit(): void {}
+  //Magic DI ... Dependency Injection
+
+  constructor(private pizzaSvc: PizzaService) {}
+  ngOnInit(): void {
+    const pt = this.pizzaSvc.getPizzaTopptingsFromTheCloud();
+    console.log(pt);
+  }
 }
