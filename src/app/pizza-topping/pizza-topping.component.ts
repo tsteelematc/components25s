@@ -1,6 +1,12 @@
 import { Component } from '@angular/core';
 import { PizzaService } from '../pizza.service';
 
+interface PizzaToppingDisplay {
+  name: string;
+  price: number;
+  checked: boolean;
+}
+
 @Component({
   selector: 'app-pizza-topping',
   standalone: false,
@@ -16,6 +22,15 @@ export class PizzaToppingComponent {
 
     const pt = this.pizzaSvc.getPizzaToppingsFromTheCloud();
     console.log(pt);
+
+    this.availablePizzaToppings = pt.map(
+      x => ({
+        ...x
+        , checked: false
+      })
+    );
+
+    console.log(this.availablePizzaToppings);
 
   }
 
