@@ -1,4 +1,5 @@
 import { Component } from '@angular/core';
+import { PizzaService } from '../pizza.service';
 
 @Component({
   selector: 'app-pizza-topping',
@@ -7,5 +8,15 @@ import { Component } from '@angular/core';
   styleUrl: './pizza-topping.component.css'
 })
 export class PizzaToppingComponent {
+  constructor(
+    private pizzaSvc: PizzaService
+  ) { }
+
+  ngOnInit(): void {
+
+    const pt = this.pizzaSvc.getPizzaToppingsFromTheCloud();
+    console.log(pt);
+
+  }
 
 }
