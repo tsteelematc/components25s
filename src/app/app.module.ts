@@ -6,10 +6,12 @@ import { AppComponent } from './app.component';
 import { PizzaToppingsComponent } from './pizza-toppings/pizza-toppings.component';
 
 import { FormsModule } from '@angular/forms';
+import { PizzaToppingComponent } from './pizza-topping/pizza-topping.component';
 @NgModule({
   declarations: [
     AppComponent,
-    PizzaToppingsComponent
+    PizzaToppingsComponent,
+    PizzaToppingComponent
   ],
   imports: [
     BrowserModule,
