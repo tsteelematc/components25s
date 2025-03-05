@@ -18,8 +18,12 @@ export class MnFivekPaceComponent implements OnInit {
   minutes = 0;
   seconds = 0;
   pace = 0;
+  paceMinutes = 0;
+  paceSeconds = 0;
 
   calculatePace = () => {
     this.pace = (this.minutes + (this.seconds / 60)) / this.milesIn5k;
+    this.paceMinutes = Math.trunc(this.pace);
+    this.paceSeconds = (this.pace - this.paceMinutes) * 60;
   }
 }
