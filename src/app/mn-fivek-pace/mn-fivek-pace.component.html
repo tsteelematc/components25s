@@ -22,10 +22,11 @@
             }
         </mat-form-field>
         <button
+            mat-stroked-button
             (click)="calculatePace()"
         >
             Calculate Pace
         </button>
-
+        {{ pace | number: '1.2-2'}} Min/Mile
     </mat-card-content>
 </mat-card>
