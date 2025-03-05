@@ -1,1 +1,16 @@
-<p>mn-fivek-pace works!</p>
+<mat-card>
+    <mat-card-title>
+        Calculate average 5k pace (min/mile)
+    </mat-card-title>
+    <mat-card-content>
+        <mat-form-field>
+            <mat-label>Enter your 5k time</mat-label>
+            <input matInput type="text" [(ngModel)]="raceTime">
+            @if (value) {
+                <button matSuffix mat-icon-button aria-label="Clear" (click)="raceTime''">
+                    <mat-icon>close</mat-icon>
+                </button>
+            }
+        </mat-form-field>
+    </mat-card-content>
+</mat-card>
