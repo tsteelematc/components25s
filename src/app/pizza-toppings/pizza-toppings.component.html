@@ -1,1 +1,31 @@
-<p>pizza-toppings works!</p>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Document</title>
+</head>
+<body>
+        <header>
+                <h2>Available Pizza Toppings</h2>
+
+        </header>
+        <div 
+                *ngFor="let pt of availablePizzaToppings"
+        >
+        <label>
+        <!-- This-the ngModel- is the binding to set boolean at refresh -->
+                <input 
+                type="checkbox"
+                [(ngModel)]="pt.checked"
+                />
+                {{ pt.name }}         ({{ pt.price | currency }})
+        </label>
+        
+        </div>
+        <main>
+
+        </main>
+        
+</body>
+</html>

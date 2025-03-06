@@ -31,7 +31,8 @@ export class PizzaToppingsComponent implements OnInit {
 
     this.availablePizzaToppings = pt.map(
       x => ({
-        ...x, checked: false
+        // auto unchecked, once bound
+        ...x, checked: false 
       })
     );
     console.log(this.availablePizzaToppings);
