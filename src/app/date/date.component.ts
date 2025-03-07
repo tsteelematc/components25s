@@ -7,5 +7,14 @@ import { Component } from '@angular/core';
   styleUrl: './date.component.css'
 })
 export class DateComponent {
+  selectedDate: Date | null = null;
+
+  applyDate() {
+    console.log("Date applied:", this.selectedDate);
+  }
+
+  cancelDate() {
+    this.selectedDate = null;
+  }
 
 }
