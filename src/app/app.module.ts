@@ -12,10 +12,20 @@ import { MatCardModule } from '@angular/material/card';
 import { MatButtonModule } from '@angular/material/button';
 import { MatCheckboxModule } from '@angular/material/checkbox';
 
+import { MatInputModule } from '@angular/material/input';
+import { MatDatepickerModule } from '@angular/material/datepicker';
+
+import { MatFormFieldModule } from '@angular/material/form-field';
+
+import { MatNativeDateModule } from '@angular/material/core';
+import { DateComponent } from './date/date.component';
+
+
 @NgModule({
   declarations: [
     AppComponent,
-    PizzaToppingsComponent
+    PizzaToppingsComponent,
+    DateComponent
   ],
   imports: [
     BrowserModule
@@ -25,6 +35,10 @@ import { MatCheckboxModule } from '@angular/material/checkbox';
     , MatCardModule
     , MatButtonModule
     , MatCheckboxModule
+    , MatInputModule
+    , MatDatepickerModule
+    , MatNativeDateModule 
+    , MatFormFieldModule
   ],
   providers: [],
   bootstrap: [AppComponent]
