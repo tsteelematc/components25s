@@ -23,6 +23,7 @@ import { JgbMagic8BallComponent } from './jgb-magic-8-ball/jgb-magic-8-ball.comp
   declarations: [
     AppComponent,
     PizzaToppingsComponent,
+    RandomToppingPickerComponent,
     TjsAdditionComponent,
     JgbMagic8BallComponent,
   ],
@@ -33,7 +34,6 @@ import { JgbMagic8BallComponent } from './jgb-magic-8-ball/jgb-magic-8-ball.comp
     BrowserAnimationsModule,
     CommonModule,
     MatCardModule,
-    RandomToppingPickerComponent,
     MatButtonModule,
     MatCheckboxModule,
     MatInputModule,
