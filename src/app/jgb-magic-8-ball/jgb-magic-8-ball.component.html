@@ -1,1 +1,10 @@
-<p>jgb-magic-8-ball works!</p>
+<mat-card>
+  <mat-card-title> Justin's Magic 8 Ball </mat-card-title>
+
+  <mat-card-content>
+    <div class="answer" *ngIf="answer">{{ answer }}</div>
+    <button mat-raised-button color="primary" (click)="shakeBall()">
+      Ask the 8 Ball
+    </button>
+  </mat-card-content>
+</mat-card>
