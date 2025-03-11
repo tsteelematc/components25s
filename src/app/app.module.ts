@@ -21,6 +21,7 @@ import { MatFormFieldModule } from '@angular/material/form-field';
   declarations: [
     AppComponent,
     PizzaToppingsComponent,
+    RandomToppingPickerComponent,
     TjsAdditionComponent,
   ],
   imports: [
@@ -30,7 +31,6 @@ import { MatFormFieldModule } from '@angular/material/form-field';
     BrowserAnimationsModule,
     CommonModule,
     MatCardModule,
-    RandomToppingPickerComponent,
     MatButtonModule,
     MatCheckboxModule,
     MatInputModule,
