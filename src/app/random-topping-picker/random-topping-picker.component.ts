@@ -6,8 +6,7 @@ import { PizzaService } from '../pizza.service';
 
 @Component({
   selector: 'app-random-topping-picker',
-  standalone: true,
-  imports: [CommonModule, MatCardModule, MatButtonModule],
+  standalone: false,
   templateUrl: './random-topping-picker.component.html',
   styleUrls: ['./random-topping-picker.component.css']
 })
