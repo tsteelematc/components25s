@@ -16,12 +16,14 @@ import { MatButtonModule } from '@angular/material/button';
 import { MatCheckboxModule } from '@angular/material/checkbox';
 import { MatInputModule } from '@angular/material/input';
 import { MatFormFieldModule } from '@angular/material/form-field';
+import { JgbMagic8BallComponent } from './jgb-magic-8-ball/jgb-magic-8-ball.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     PizzaToppingsComponent,
     TjsAdditionComponent,
+    JgbMagic8BallComponent,
   ],
   imports: [
     BrowserModule,
