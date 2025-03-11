@@ -23,7 +23,17 @@ export class JgbMagic8BallComponent {
   answer: string | null = null;
 
   //This function sets the answer property to a random value from the answers array.
-  shakeBall = () =>
+  shakeBallOld = () =>
     (this.answer =
       this.answers[Math.floor(Math.random() * this.answers.length)]);
+
+  //This function does the same thing as the shakeBallOld but adds a delay
+  shakeBall = () => {
+    this.answer = null;
+
+    setTimeout(() => {
+      this.answer =
+        this.answers[Math.floor(Math.random() * this.answers.length)];
+    }, 1500);
+  };
 }
