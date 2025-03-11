@@ -4,7 +4,7 @@ import { Component } from '@angular/core';
   selector: 'app-jgb-magic-8-ball',
   standalone: false,
   templateUrl: './jgb-magic-8-ball.component.html',
-  styleUrl: './jgb-magic-8-ball.component.css',
+  styleUrl: './jgb-magic-8-ball.component.scss',
 })
 export class JgbMagic8BallComponent {
   //Creates a string array that contains the possible answers from the 8-ball

@@ -3,6 +3,7 @@
 
   <mat-card-content>
     <div class="answer" *ngIf="answer">{{ answer }}</div>
+
     <button
       mat-raised-button
       color="primary"
@@ -11,6 +12,7 @@
     >
       Ask the 8 Ball
     </button>
+
     <mat-progress-spinner
       *ngIf="loading"
       mode="indeterminate"
