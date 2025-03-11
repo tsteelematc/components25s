@@ -7,16 +7,33 @@ import { Component } from '@angular/core';
   styleUrl: './jgb-magic-8-ball.component.scss',
 })
 export class JgbMagic8BallComponent {
-  //Creates a string array that contains the possible answers from the 8-ball
+  // Creates a string array that contains the official responses from the Magic 8-Ball
   answers: string[] = [
-    'Yes',
-    'No',
-    'Ask again later',
-    'Definitely',
-    'Absolutely not',
-    'Unclear, try again',
-    'Most likely',
-    'Doubtful',
+    // Positive answers
+    'It is certain.',
+    'It is decidedly so.',
+    'Without a doubt.',
+    'Yes definitely.',
+    'You may rely on it.',
+    'As I see it, yes.',
+    'Most likely.',
+    'Outlook good.',
+    'Yes.',
+    'Signs point to yes.',
+
+    // Neutral answers
+    'Reply hazy, try again.',
+    'Ask again later.',
+    'Better not tell you now.',
+    'Cannot predict now.',
+    'Concentrate and ask again.',
+
+    // Negative answers
+    'Don’t count on it.',
+    'My reply is no.',
+    'My sources say no.',
+    'Outlook not so good.',
+    'Very doubtful.',
   ];
 
   //Creates a answer property that will have the type of a string(our answer) or null(no answer has been picked yet) This also has the default of null so that no answer shows up in the view to start with
