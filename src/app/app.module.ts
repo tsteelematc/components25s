@@ -13,6 +13,9 @@ import { CommonModule } from '@angular/common';
 import { MatCardModule } from '@angular/material/card';
 import { MatButtonModule } from '@angular/material/button';
 import { MatCheckboxModule } from '@angular/material/checkbox';
+import { TjsAdditionComponent } from './tjs-addition/tjs-addition.component';
+import { MatInputModule } from '@angular/material/input';
+import { MatFormFieldModule } from '@angular/material/form-field';
 
 @NgModule({
   declarations: [
@@ -29,7 +32,18 @@ import { MatCheckboxModule } from '@angular/material/checkbox';
     MatButtonModule,
     MatCheckboxModule,
     RandomToppingPickerComponent
-],
+    TjsAdditionComponent,
+  ],
+  imports: [
+    BrowserModule,
+    AppRoutingModule
+    , FormsModule
+    , MatCardModule
+    , MatButtonModule
+    , MatCheckboxModule
+    , MatInputModule
+    , MatFormFieldModule
+  ],
   providers: [],
   bootstrap: [AppComponent]
 })
