@@ -3,7 +3,12 @@
 
   <mat-card-content>
     <div class="answer" *ngIf="answer">{{ answer }}</div>
-    <button mat-raised-button color="primary" (click)="shakeBall()">
+    <button
+      mat-raised-button
+      color="primary"
+      *ngIf="!loading"
+      (click)="shakeBall()"
+    >
       Ask the 8 Ball
     </button>
     <mat-progress-spinner
