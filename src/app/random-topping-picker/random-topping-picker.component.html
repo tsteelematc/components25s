@@ -1,0 +1,12 @@
+<mat-card>
+    <mat-card-title>Random Toppings</mat-card-title>
+    <mat-card-content>
+      <button mat-raised-button (click)="pickRandomToppings()">Pick Random</button>
+      <ul>
+        <li *ngFor="let topping of selectedToppings">
+          {{ topping.name }} ({{ topping.price | currency }})
+        </li>
+      </ul>
+    </mat-card-content>
+  </mat-card>
+  
