@@ -4,8 +4,26 @@ import { Component } from '@angular/core';
   selector: 'app-jgb-magic-8-ball',
   standalone: false,
   templateUrl: './jgb-magic-8-ball.component.html',
-  styleUrl: './jgb-magic-8-ball.component.css'
+  styleUrl: './jgb-magic-8-ball.component.css',
 })
 export class JgbMagic8BallComponent {
+  //Creates a string array that contains the possible answers from the 8-ball
+  answers: string[] = [
+    'Yes',
+    'No',
+    'Ask again later',
+    'Definitely',
+    'Absolutely not',
+    'Unclear, try again',
+    'Most likely',
+    'Doubtful',
+  ];
 
+  //Creates a answer property that will have the type of a string(our answer) or null(no answer has been picked yet) This also has the default of null so that no answer shows up in the view to start with
+  answer: string | null = null;
+
+  //This function sets the answer property to a random value from the answers array.
+  shakeBall = () =>
+    (this.answer =
+      this.answers[Math.floor(Math.random() * this.answers.length)]);
 }
