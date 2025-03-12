@@ -1,0 +1,56 @@
+/*Centers the mat-card and styles it like an 8 ball*/
+mat-card {
+  max-width: 50%;
+  margin: 2em auto;
+  padding: 1em;
+  text-align: center;
+  background: black;
+  color: white;
+  border-radius: 50px;
+}
+
+/*Centers the Ask the 8 Ball button*/
+button {
+  margin-top: 1em;
+  font-size: 1.1rem;
+  font-weight: bold;
+}
+
+/*Centers the progress spinner*/
+mat-progress-spinner {
+  display: block;
+  margin: 1em auto;
+}
+
+/* Answer Box */
+.answer {
+  width: 80%;
+  max-width: 50%;
+  background-color: #00008b; // Dark blue background
+  color: white;
+  font-size: 1.2rem;
+  font-weight: bold;
+  text-align: center;
+  padding: 1em;
+  margin: 1em auto;
+  border-radius: 10px; // Slightly rounded edges
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  word-wrap: break-word;
+
+  opacity: 0; // Start fully transparent
+  animation: fadeIn 0.8s ease-in-out forwards; // Runs the fade-in animation
+}
+
+/* Fade-in effect */
+@keyframes fadeIn {
+  0% {
+    opacity: 0;
+    transform: scale(0.8); // Slightly smaller at start
+  }
+  100% {
+    opacity: 1;
+    transform: scale(1);
+  }
+}
