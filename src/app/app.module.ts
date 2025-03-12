@@ -23,8 +23,7 @@ import { MatFormFieldModule } from '@angular/material/form-field';
 import { MatNativeDateModule } from '@angular/material/core';
 import { DateComponent } from './date/date.component';
 
-import { MatInputModule } from '@angular/material/input';
-import { MatFormFieldModule } from '@angular/material/form-field';
+
 import { MatProgressSpinnerModule } from '@angular/material/progress-spinner';
 import { JgbMagic8BallComponent } from './jgb-magic-8-ball/jgb-magic-8-ball.component';
 
@@ -32,7 +31,10 @@ import { JgbMagic8BallComponent } from './jgb-magic-8-ball/jgb-magic-8-ball.comp
   declarations: [
     AppComponent,
     PizzaToppingsComponent,
-    DateComponent
+    DateComponent,
+    RandomToppingPickerComponent,
+    TjsAdditionComponent,
+    JgbMagic8BallComponent,
   ],
   imports: [
     BrowserModule
@@ -46,23 +48,10 @@ import { JgbMagic8BallComponent } from './jgb-magic-8-ball/jgb-magic-8-ball.comp
     , MatDatepickerModule
     , MatNativeDateModule 
     , MatFormFieldModule
-    RandomToppingPickerComponent,
-    TjsAdditionComponent,
-    JgbMagic8BallComponent,
+    , MatProgressSpinnerModule
+    , CommonModule
   ],
-  imports: [
-    BrowserModule,
-    AppRoutingModule,
-    FormsModule,
-    BrowserAnimationsModule,
-    CommonModule,
-    MatCardModule,
-    MatButtonModule,
-    MatCheckboxModule,
-    MatInputModule,
-    MatFormFieldModule,
-    MatProgressSpinnerModule,
-  ],
+  
   providers: [],
   bootstrap: [AppComponent],
 })

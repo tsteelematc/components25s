@@ -53,7 +53,7 @@ export class PizzaToppingsComponent implements OnInit {
     x => ({
       ...x
       ,checked: true
-      , checked: true
+ 
     })
   );
 
@@ -61,7 +61,7 @@ export class PizzaToppingsComponent implements OnInit {
     x => ({
       ...x
       ,checked: false
-      , checked: false
+ 
     })
   );
 
