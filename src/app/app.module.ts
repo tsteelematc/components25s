@@ -33,11 +33,11 @@ import { JgbMagic8BallComponent } from './jgb-magic-8-ball/jgb-magic-8-ball.comp
   declarations: [
     AppComponent,
     PizzaToppingsComponent,
-    MnFivekPaceComponent,
     DateComponent,
     RandomToppingPickerComponent,
     TjsAdditionComponent,
     JgbMagic8BallComponent,
+    MnFivekPaceComponent,
   ],
   imports: [
     BrowserModule
@@ -49,15 +49,12 @@ import { JgbMagic8BallComponent } from './jgb-magic-8-ball/jgb-magic-8-ball.comp
     , MatCheckboxModule
     , MatInputModule
     , MatIconModule
-    , MatFormField
-    , RandomToppingPickerComponent
-    , TjsAdditionComponent
-    , JgbMagic8BallComponent
-    , CommonModule
-    , MatFormFieldModule
-    , MatProgressSpinnerModule
     , MatDatepickerModule
-    , MatNativeDateModule 
+    , MatNativeDateModule
+    , MatFormFieldModule
+    , MatFormField
+    , CommonModule
+    , MatProgressSpinnerModule
   ],
   
   providers: [],
