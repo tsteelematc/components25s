@@ -18,7 +18,14 @@ import {MatInputModule} from '@angular/material/input';
 import { MatFormField } from '@angular/material/input';
 import {MatIconModule} from '@angular/material/icon';
 import { MnFivekPaceComponent } from './mn-fivek-pace/mn-fivek-pace.component';
+import { MatDatepickerModule } from '@angular/material/datepicker';
+
 import { MatFormFieldModule } from '@angular/material/form-field';
+
+import { MatNativeDateModule } from '@angular/material/core';
+import { DateComponent } from './date/date.component';
+
+
 import { MatProgressSpinnerModule } from '@angular/material/progress-spinner';
 import { JgbMagic8BallComponent } from './jgb-magic-8-ball/jgb-magic-8-ball.component';
 
@@ -26,12 +33,17 @@ import { JgbMagic8BallComponent } from './jgb-magic-8-ball/jgb-magic-8-ball.comp
   declarations: [
     AppComponent,
     PizzaToppingsComponent,
-    MnFivekPaceComponent
+    MnFivekPaceComponent,
+    DateComponent,
+    RandomToppingPickerComponent,
+    TjsAdditionComponent,
+    JgbMagic8BallComponent,
   ],
   imports: [
     BrowserModule
     , AppRoutingModule
     , FormsModule
+    , BrowserAnimationsModule
     , MatCardModule
     , MatButtonModule
     , MatCheckboxModule
@@ -41,12 +53,13 @@ import { JgbMagic8BallComponent } from './jgb-magic-8-ball/jgb-magic-8-ball.comp
     , RandomToppingPickerComponent
     , TjsAdditionComponent
     , JgbMagic8BallComponent
-    , BrowserModule
-    , BrowserAnimationsModule
     , CommonModule
     , MatFormFieldModule
     , MatProgressSpinnerModule
+    , MatDatepickerModule
+    , MatNativeDateModule 
   ],
+  
   providers: [],
   bootstrap: [AppComponent],
 })
