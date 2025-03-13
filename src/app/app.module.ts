@@ -14,8 +14,16 @@ import { CommonModule } from '@angular/common';
 import { MatCardModule } from '@angular/material/card';
 import { MatButtonModule } from '@angular/material/button';
 import { MatCheckboxModule } from '@angular/material/checkbox';
+
 import { MatInputModule } from '@angular/material/input';
+import { MatDatepickerModule } from '@angular/material/datepicker';
+
 import { MatFormFieldModule } from '@angular/material/form-field';
+
+import { MatNativeDateModule } from '@angular/material/core';
+import { DateComponent } from './date/date.component';
+
+
 import { MatProgressSpinnerModule } from '@angular/material/progress-spinner';
 import { JgbMagic8BallComponent } from './jgb-magic-8-ball/jgb-magic-8-ball.component';
 
@@ -23,23 +31,27 @@ import { JgbMagic8BallComponent } from './jgb-magic-8-ball/jgb-magic-8-ball.comp
   declarations: [
     AppComponent,
     PizzaToppingsComponent,
+    DateComponent,
     RandomToppingPickerComponent,
     TjsAdditionComponent,
     JgbMagic8BallComponent,
   ],
   imports: [
-    BrowserModule,
-    AppRoutingModule,
-    FormsModule,
-    BrowserAnimationsModule,
-    CommonModule,
-    MatCardModule,
-    MatButtonModule,
-    MatCheckboxModule,
-    MatInputModule,
-    MatFormFieldModule,
-    MatProgressSpinnerModule,
+    BrowserModule
+    , AppRoutingModule
+    , FormsModule
+    , BrowserAnimationsModule
+    , MatCardModule
+    , MatButtonModule
+    , MatCheckboxModule
+    , MatInputModule
+    , MatDatepickerModule
+    , MatNativeDateModule 
+    , MatFormFieldModule
+    , MatProgressSpinnerModule
+    , CommonModule
   ],
+  
   providers: [],
   bootstrap: [AppComponent],
 })
