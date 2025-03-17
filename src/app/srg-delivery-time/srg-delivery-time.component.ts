@@ -4,8 +4,6 @@ import { Component } from '@angular/core';
   selector: 'app-srg-delivery-time',
   standalone: false,
   templateUrl: './srg-delivery-time.component.html',
-  styleUrl: './srg-delivery-time.component.css'
+  styleUrl: './srg-delivery-time.component.css',
 })
-export class SrgDeliveryTimeComponent {
-
-}
+export class SrgDeliveryTimeComponent {}

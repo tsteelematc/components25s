@@ -13,8 +13,10 @@ import { MatCheckboxModule } from '@angular/material/checkbox';
 
 // delivery time imports
 import { SrgDeliveryTimeComponent } from './srg-delivery-time/srg-delivery-time.component';
+import { MatTimepickerModule } from '@angular/material/timepicker';
 import { MatInputModule } from '@angular/material/input';
 import { MatFormFieldModule } from '@angular/material/form-field';
+import { provideNativeDateAdapter } from '@angular/material/core';
 
 @NgModule({
   declarations: [
@@ -29,10 +31,11 @@ import { MatFormFieldModule } from '@angular/material/form-field';
     MatCardModule,
     MatButtonModule,
     MatCheckboxModule,
+    MatTimepickerModule,
     MatInputModule,
     MatFormFieldModule,
   ],
-  providers: [],
+  providers: [provideNativeDateAdapter()],
   bootstrap: [AppComponent],
 })
 export class AppModule {}
