@@ -10,11 +10,13 @@ import { FormsModule } from '@angular/forms';
 import { MatCardModule } from '@angular/material/card';
 import { MatButtonModule } from '@angular/material/button';
 import { MatCheckboxModule } from '@angular/material/checkbox';
+import { SrgDeliveryTimeComponent } from './srg-delivery-time/srg-delivery-time.component';
 
 @NgModule({
   declarations: [
     AppComponent,
-    PizzaToppingsComponent
+    PizzaToppingsComponent,
+    SrgDeliveryTimeComponent
   ],
   imports: [
     BrowserModule,
