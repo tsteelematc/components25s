@@ -17,6 +17,7 @@ import { MatTimepickerModule } from '@angular/material/timepicker';
 import { MatInputModule } from '@angular/material/input';
 import { MatFormFieldModule } from '@angular/material/form-field';
 import { provideNativeDateAdapter } from '@angular/material/core';
+import { MatIcon } from '@angular/material/icon';
 
 @NgModule({
   declarations: [
@@ -34,6 +35,7 @@ import { provideNativeDateAdapter } from '@angular/material/core';
     MatTimepickerModule,
     MatInputModule,
     MatFormFieldModule,
+    MatIcon,
   ],
   providers: [provideNativeDateAdapter()],
   bootstrap: [AppComponent],

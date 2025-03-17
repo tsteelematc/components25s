@@ -6,4 +6,6 @@ import { Component } from '@angular/core';
   templateUrl: './srg-delivery-time.component.html',
   styleUrl: './srg-delivery-time.component.css',
 })
-export class SrgDeliveryTimeComponent {}
+export class SrgDeliveryTimeComponent {
+  selectedTime: Date | null = null;
+}
