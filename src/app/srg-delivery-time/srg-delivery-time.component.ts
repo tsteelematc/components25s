@@ -16,7 +16,7 @@ export class SrgDeliveryTimeComponent implements OnInit {
     this.currentTime = new Date();
 
     // set selected time to 30 min after current time on app load
-    this.selectedTime = this.currentTime;
+    this.selectedTime = new Date();
     this.selectedTime.setMinutes(this.selectedTime.getMinutes() + 30);
   }
 }
