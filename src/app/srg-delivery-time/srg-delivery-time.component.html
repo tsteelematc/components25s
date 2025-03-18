@@ -12,6 +12,9 @@
     </mat-form-field>
 
     <h3>Current time: {{ currentTime | date : "h:mm a" }}</h3>
-    <h3>Delivery time: {{ selectedTime | date : "h:mm a" }}</h3>
+
+    <h3 [style.color]="timeColor">
+      Delivery time: {{ selectedTime | date : "h:mm a" }}
+    </h3>
   </mat-card-content>
 </mat-card>

@@ -8,8 +8,8 @@ import { Component, OnInit } from '@angular/core';
 })
 export class SrgDeliveryTimeComponent implements OnInit {
   // initialize time properties to null
-  selectedTime: Date | null = null;
-  currentTime: Date | null = null;
+  selectedTime: Date = new Date();
+  currentTime: Date = new Date();
 
   ngOnInit(): void {
     // get current time on load
@@ -18,5 +18,14 @@ export class SrgDeliveryTimeComponent implements OnInit {
     // set selected time to 30 min after current time on app load
     this.selectedTime = new Date();
     this.selectedTime.setMinutes(this.selectedTime.getMinutes() + 30);
+  }
+
+  // set color
+  get timeColor() {
+    let color = 'red';
+    if (this.selectedTime.getTime() >= this.currentTime.getTime() + 30) {
+      color = 'green';
+    }
+    return color;
   }
 }
