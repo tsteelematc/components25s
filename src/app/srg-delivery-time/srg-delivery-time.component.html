@@ -11,6 +11,7 @@
       <mat-timepicker #picker />
     </mat-form-field>
 
-    <h3>Pizza delvery time: {{ selectedTime | date : "h:mm a" }}</h3>
+    <h3>Current time: {{ currentTime | date : "h:mm a" }}</h3>
+    <h3>Delivery time: {{ selectedTime | date : "h:mm a" }}</h3>
   </mat-card-content>
 </mat-card>

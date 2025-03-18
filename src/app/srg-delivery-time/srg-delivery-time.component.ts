@@ -1,4 +1,4 @@
-import { Component } from '@angular/core';
+import { Component, OnInit } from '@angular/core';
 
 @Component({
   selector: 'app-srg-delivery-time',
@@ -6,6 +6,17 @@ import { Component } from '@angular/core';
   templateUrl: './srg-delivery-time.component.html',
   styleUrl: './srg-delivery-time.component.css',
 })
-export class SrgDeliveryTimeComponent {
+export class SrgDeliveryTimeComponent implements OnInit {
+  // initialize time properties to null
   selectedTime: Date | null = null;
+  currentTime: Date | null = null;
+
+  ngOnInit(): void {
+    // get current time on load
+    this.currentTime = new Date();
+
+    // set selected time to 30 min after current time on app load
+    this.selectedTime = this.currentTime;
+    this.selectedTime.setMinutes(this.selectedTime.getMinutes() + 30);
+  }
 }
