@@ -28,6 +28,7 @@ import { DateComponent } from './date/date.component';
 
 import { MatProgressSpinnerModule } from '@angular/material/progress-spinner';
 import { JgbMagic8BallComponent } from './jgb-magic-8-ball/jgb-magic-8-ball.component';
+import { PizzaReviewComponent } from './pizza-review/pizza-review.component';
 
 @NgModule({
   declarations: [
@@ -38,6 +39,7 @@ import { JgbMagic8BallComponent } from './jgb-magic-8-ball/jgb-magic-8-ball.comp
     TjsAdditionComponent,
     JgbMagic8BallComponent,
     MnFivekPaceComponent,
+    PizzaReviewComponent,
   ],
   imports: [
     BrowserModule
