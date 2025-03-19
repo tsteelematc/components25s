@@ -7,5 +7,18 @@ import { Component } from '@angular/core';
   styleUrl: './pizza-review.component.css'
 })
 export class PizzaReviewComponent {
+  reviews: { rating: number, comment: string }[] = [];
+  rating: number = 5; 
+  comment: string = '';
 
+  addReview() {
+    if (this.comment.trim() === '') return; 
+    this.reviews.push({
+      rating: this.rating,
+      comment: this.comment
+    });
+
+    this.rating = 5;
+    this.comment = '';
+  }
 }

@@ -1,1 +1,33 @@
-<p>pizza-review works!</p>
+<mat-card>
+    <mat-card-title>
+        Pizza Review
+    </mat-card-title>
+    <br>
+    <mat-card-content>
+        <mat-form-field>
+            <mat-label>Rating</mat-label>
+            <mat-select [(ngModel)]="rating">
+                <mat-option *ngFor="let r of [1, 2, 3, 4, 5]" [value]="r">
+                    {{ r }} ⭐
+                </mat-option>
+            </mat-select>
+        </mat-form-field>
+
+        <mat-form-field>
+            <mat-label>Your Review</mat-label>
+            <textarea matInput [(ngModel)]="comment" placeholder="Write your review here...">
+            </textarea>
+        </mat-form-field>
+
+        <button mat-raised-button (click)="addReview()">Submit Review</button>
+    </mat-card-content>
+</mat-card>
+
+<mat-card *ngFor="let review of reviews">
+    <mat-card-title>
+        Rating: ⭐ {{ review.rating }}/5
+    </mat-card-title>
+    <mat-card-content>
+      <p>{{ review.comment }}</p>
+    </mat-card-content>
+</mat-card>

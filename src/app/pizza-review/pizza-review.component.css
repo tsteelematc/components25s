@@ -1,0 +1,14 @@
+mat-card {
+    display: block;
+    margin-bottom: 1px; 
+}
+  
+mat-form-field {
+    width: 100%;
+    display: block;
+    margin-bottom: 1px; 
+}
+  
+button {
+    margin-top: 1px;
+}
